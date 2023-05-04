@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+body{
+  
+  font-family: 'Poppins', sans-serif;
+  color: #4a434a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-bar{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #F3F3F3;
+    background-color: #595151;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.mid{
+    max-width: 1280px;
+    width: 100%;
+    margin: 30px auto;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  
+  padding: 10px;
+  flex: 60%;
+}
+
+.flex-item-right {
+  
+  padding: 10px;
+  flex: 40%;
+}
+.flex-item-right #banner-heading{
+    font-size: 1em !important;
+    text-align: left !important;
+    color: #4a434a;
+    line-height: 1.2;
+
+}
+.flex-item-right p{
+    font-size: 18px;
+}
+.flex-item-right h4{
+    font-size: 30px;
+}
+.equalthree-child:nth-child(1){
+    border-right: 1px solid #b7b7b7;
+}
+.equalthree-child:nth-child(1) h4{
+    color: #b7b7b7;    
+    text-decoration: line-through;
+    
+  }
+.equalthree-child:nth-child(2){
+    border-right: 1px solid #b7b7b7;
+}
+.equalthree-child:nth-child(2) h4{
+    color: #dc2020;
+}
+.equalthree-child:nth-child(3) h4{
+    color: #dc2020;
+}
+
+/*slider*/
+
+/*Slider csss 
+#content-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    overflow: hidden;
+}
+start*/
+
+
+
+/*Slider CSS Start from here*/
+.container{
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#featured{
+    max-width: 550px;
+    max-height: 550px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #000;
+
+}
+.thumbnail{
+    object-fit: cover;
+    max-width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+    opacity: .5;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.slide-wrapper{
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+#slider{
+    max-height: 370px;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.arrow{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+.thumbnail:hover{
+	opacity:1;
+}
+
+.active{
+	opacity: 1;
+}
+.arrow:hover{
+	opacity: .5;
+	width: 30px;
+	height: 30px;
+}
+
+
+
+/*Slider CSS End from here*/
+
+.pricing{
+    max-width: 100%;
+    width: 100%;
+    margin: 10px auto;
+
+}
+.equalthree-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.equalthree-child{
+    flex: 33%;
+    padding: 10px;
+}
+
+.offer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+
+
+}
+.button-container button{
+    width: 100%;
+    padding: 14px 16px;
+    background-color: rgb(46, 166, 232);
+    border: 1px solid rgb(46, 166, 232);
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .button-container button:hover{
+    background-color: rgb(69, 176, 235);
+  }
+.button-container img{
+    width: 166px;
+}
+
+
+.faq-container{
+    display: flex;
+    flex-wrap: wrap;
+     
+}
+.faq-content-left{
+    padding: 10px;
+    flex: 30%;
+}
+.faq-content-right{
+    padding: 10px;
+    flex: 70%;
+}
+.faq .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.question h3{
+    font-size: 1.2rem;
+    color: rgb(74, 67, 74);
+    font-weight: 400;
+}
+.question img{
+    width: 20px;
+}
+.faq{
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.answer p{
+    padding-top: 1rem;
+    font-size: .8rem;
+    line-height: 1.4;
+    color: #4a434a;
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    
+}
+.faq.active .answer{
+   max-height: 300px;
+}
+.faq.active img{
+    transform: rotate(180deg);
+}
+.footer{
+    background-color: #474048;
+    color: #E6E6E6;
+    display: flex;
+    justify-content: center;
+    padding: 80px 10px;
+}
+
+.cpyright-text{
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.footer a{
+    color: #E6E6E6;
+}
+.unscore{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.unscore::after{
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: rgb(69, 176, 235);
+    display: block;
+    margin: 0px auto;
+    
+}
+.youtube-video-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.youtube-video{
+    flex: 33%;
+}
+
+.video-carosel{
+    background-color: #eee;
+    padding: 25px 10px;
+}
+.about-container{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.about-left-content{
+    flex: 30%;
+    padding: 10px;
+}
+.about-left-content h1{
+    margin-top: 0px;
+}
+.about-right-content{
+    flex: 70%;
+    padding: 10px;
+}
+.about-right-content h3{
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+.about-right-content ul{
+   margin-left: 30px;
+   list-style-type: square;
+}
+.about-right-content ul li{
+    margin: 8px 0px;
+    color: #4a434a;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    max-width: 450px;
+    margin: 10px auto;
+    width: 100%;
+    flex-direction: column;
+}
+.btn-container button{
+    width: 100%;
+    padding: 14px 16px;
+    background-color: rgb(46, 166, 232);
+    border: 1px solid rgb(46, 166, 232);
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;  
+}
+#demo{
+    font-size: 20px !important;
+    font-weight: 600;
+}
+
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 900px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+  .faq-content-right, .faq-content-left{
+    flex: 100%;
+  }
+  .about-left-content, .about-right-content{
+    flex: 100%;
+  }
+  
+  iframe{
+    width: 560px;   
+    height: 350px;
+}
+.youtube-video{
+    flex: 100%;
+}
+.youtube-video-container{
+    justify-content: center;
+    flex-direction: column;
+}
+.accordian-faq{
+    padding: 25px 10px;
+}
+}
+
+
+
+/* slider responsive*/
+@media (max-width: 400px) {
+    #featured {
+      max-width: 280px;
+      max-height: 280px;
+    }
+    .slide-wrapper{
+        max-height: 280px;
+        
+    }
+    .thumbnail{
+        object-fit: cover;
+        max-width: 60px;
+        max-height: 60px;
+        
+        
+    
+    }
+    .container{
+        width: 100%;
+    }
+    .flex-item-right #banner-heading{
+        font-size: 1em !important;
+        text-align: center !important;
+        
+    
+    }
+    .pricing{
+        max-width: 100%;
+    }
+    iframe{
+        width: 100% !important;
+        height: auto;
+    }
+    .accordian-faq{
+        padding: 25px 10px;
+    }
+  }
